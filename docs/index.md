@@ -18,6 +18,8 @@ No one needs equations to use the idea. The point is simple: people respond to t
 
 <p style="font-size: small; color: #6b7280; margin-top: 0.5em;">By Rodrigo A. Diaz Leven — <a href="https://www.linkedin.com/in/rodrigoleven/">LinkedIn</a> · <a href="https://github.com/bruj0">GitHub</a> · <a href="https://resume.bruj0.net/bruj0/rodrigo-leven">Resume</a></p>
 
+![Why AI adoption stalls: your team may be right to wait](linkedin-image-1791020152758.png){ .essay-cover }
+
 ## Table of contents
 
 - [The technology is only part of the change](#the-technology-is-only-part-of-the-change)
