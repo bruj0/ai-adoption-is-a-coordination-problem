@@ -1,0 +1,1619 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="How game theory can help companies turn isolated AI experiments into better ways of working.">
+      
+      
+      
+        <link rel="canonical" href="https://bruj0.github.io/ai-adoption-is-a-coordination-problem/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>AI Adoption Is a Coordination Problem</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="assets/stylesheets/panzoom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <meta name="panzoom-theme" content="material">
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-adoption-is-a-coordination-problem-not-a-training-problem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="AI Adoption Is a Coordination Problem" class="md-header__button md-logo" aria-label="AI Adoption Is a Coordination Problem" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 12a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 5m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 10a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 7M5.5 8A2.5 2.5 0 0 0 3 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32c.37-.21.68-.51.91-.87A5.42 5.42 0 0 1 6.5 8.5v-.28c-.3-.14-.64-.22-1-.22m13 0c-.36 0-.7.08-1 .22v.28c0 1.2-.39 2.36-1.12 3.31.12.19.25.34.4.49a2.482 2.482 0 0 0 1.72.7c.44 0 .85-.12 1.21-.32.76-.43 1.29-1.24 1.29-2.18A2.5 2.5 0 0 0 18.5 8M12 14c-2.34 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.66-3.5-7-3.5m-7.29.55C2.78 14.78 0 15.76 0 17.5V19h3v-1.93c0-1.01.69-1.85 1.71-2.52m14.58 0c1.02.67 1.71 1.51 1.71 2.52V19h3v-1.5c0-1.74-2.78-2.72-4.71-2.95M12 16c1.53 0 3.24.5 4.23 1H7.77c.99-.5 2.7-1 4.23-1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Adoption Is a Coordination Problem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Essay
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bruj0/ai-adoption-is-a-coordination-problem" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bruj0/ai-adoption-is-a-coordination-problem
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="AI Adoption Is a Coordination Problem" class="md-nav__button md-logo" aria-label="AI Adoption Is a Coordination Problem" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 12a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 5m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 10a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 7M5.5 8A2.5 2.5 0 0 0 3 10.5c0 .94.53 1.75 1.29 2.18.36.2.77.32 1.21.32s.85-.12 1.21-.32c.37-.21.68-.51.91-.87A5.42 5.42 0 0 1 6.5 8.5v-.28c-.3-.14-.64-.22-1-.22m13 0c-.36 0-.7.08-1 .22v.28c0 1.2-.39 2.36-1.12 3.31.12.19.25.34.4.49a2.482 2.482 0 0 0 1.72.7c.44 0 .85-.12 1.21-.32.76-.43 1.29-1.24 1.29-2.18A2.5 2.5 0 0 0 18.5 8M12 14c-2.34 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.66-3.5-7-3.5m-7.29.55C2.78 14.78 0 15.76 0 17.5V19h3v-1.93c0-1.01.69-1.85 1.71-2.52m14.58 0c1.02.67 1.71 1.51 1.71 2.52V19h3v-1.5c0-1.74-2.78-2.72-4.71-2.95M12 16c1.53 0 3.24.5 4.23 1H7.77c.99-.5 2.7-1 4.23-1"/></svg>
+
+    </a>
+    AI Adoption Is a Coordination Problem
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bruj0/ai-adoption-is-a-coordination-problem" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bruj0/ai-adoption-is-a-coordination-problem
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essay
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-technology-is-only-part-of-the-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The technology is only part of the change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-waiting-can-be-rational" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why waiting can be rational
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-benefit-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared-benefit problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-speed-creates-costs-for-everyone-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When speed creates costs for everyone else
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-adoption-can-threaten-professional-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI adoption can threaten professional identity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visible-enthusiasm-is-not-the-same-as-changed-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visible enthusiasm is not the same as changed behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-setup-not-just-the-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change the setup, not just the training
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change the setup, not just the training">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-make-progress-visible-without-turning-it-into-surveillance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Make progress visible without turning it into surveillance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reward-useful-behavior-rather-than-ai-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reward useful behavior rather than AI activity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lower-the-cost-of-the-first-useful-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Lower the cost of the first useful experience
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-give-existing-expertise-a-stronger-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Give existing expertise a stronger role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-make-the-safe-path-the-easiest-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Make the safe path the easiest path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-step-by-step-adoption-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A step-by-step adoption plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A step-by-step adoption plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-understand-the-starting-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Understand the starting point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-prove-value-in-narrow-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Prove value in narrow cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-build-skills-the-team-can-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Build skills the team can share
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-update-management-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Update management practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-see-whether-it-lasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: See whether it lasts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measure-whether-work-changed-not-whether-people-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measure whether work changed, not whether people clicked
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-an-adoption-plan-can-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How an adoption plan can go wrong
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How an adoption plan can go wrong">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-not-create-ai-quotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not create AI quotas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-turn-transparency-into-surveillance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not turn transparency into surveillance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-reward-quantity-of-shared-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not reward quantity of shared assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-confuse-confidence-with-competence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not confuse confidence with competence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-penalize-honest-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not penalize honest failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-ignore-unequal-opportunity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not ignore unequal opportunity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-give-experts-extra-duties-without-giving-them-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not give experts extra duties without giving them time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-use-adoption-as-a-substitute-for-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not use adoption as a substitute for strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-leaders-should-do-differently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What leaders should do differently
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adoption-follows-the-game-people-are-actually-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adoption follows the game people are actually playing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-author" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About the author
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-technology-is-only-part-of-the-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The technology is only part of the change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-waiting-can-be-rational" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why waiting can be rational
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-shared-benefit-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The shared-benefit problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-speed-creates-costs-for-everyone-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When speed creates costs for everyone else
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-adoption-can-threaten-professional-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI adoption can threaten professional identity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visible-enthusiasm-is-not-the-same-as-changed-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visible enthusiasm is not the same as changed behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-the-setup-not-just-the-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change the setup, not just the training
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change the setup, not just the training">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-make-progress-visible-without-turning-it-into-surveillance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Make progress visible without turning it into surveillance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reward-useful-behavior-rather-than-ai-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reward useful behavior rather than AI activity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lower-the-cost-of-the-first-useful-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Lower the cost of the first useful experience
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-give-existing-expertise-a-stronger-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Give existing expertise a stronger role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-make-the-safe-path-the-easiest-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Make the safe path the easiest path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-step-by-step-adoption-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A step-by-step adoption plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A step-by-step adoption plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-understand-the-starting-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Understand the starting point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-prove-value-in-narrow-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Prove value in narrow cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-build-skills-the-team-can-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Build skills the team can share
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-update-management-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Update management practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-see-whether-it-lasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: See whether it lasts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measure-whether-work-changed-not-whether-people-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measure whether work changed, not whether people clicked
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-an-adoption-plan-can-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How an adoption plan can go wrong
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How an adoption plan can go wrong">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-not-create-ai-quotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not create AI quotas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-turn-transparency-into-surveillance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not turn transparency into surveillance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-reward-quantity-of-shared-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not reward quantity of shared assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-confuse-confidence-with-competence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not confuse confidence with competence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-penalize-honest-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not penalize honest failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-ignore-unequal-opportunity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not ignore unequal opportunity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-give-experts-extra-duties-without-giving-them-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not give experts extra duties without giving them time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not-use-adoption-as-a-substitute-for-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do not use adoption as a substitute for strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-leaders-should-do-differently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What leaders should do differently
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adoption-follows-the-game-people-are-actually-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adoption follows the game people are actually playing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-the-author" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About the author
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ai-adoption-is-a-coordination-problem-not-a-training-problem">AI Adoption Is a Coordination Problem, Not a Training Problem<a class="headerlink" href="#ai-adoption-is-a-coordination-problem-not-a-training-problem" title="Permanent link">&para;</a></h1>
+<p><em>How game theory can help companies turn isolated AI experiments into better ways of working.</em></p>
+<p><strong>My argument: People often delay or resist AI for good reasons. If companies want wider use, they need to make AI worth trying, reward good work, respect existing expertise, and make the safe option easier than the shortcut.</strong></p>
+<p>A company buys an AI platform, announces a big change, schedules training, and waits for everyone to start using it.</p>
+<p>A few enthusiasts move quickly. Most people watch. Some attend every demonstration but change nothing in their daily work. Others use public AI tools quietly because the approved system is slower. Leaders conclude that employees fear change.</p>
+<p>That conclusion is often too simple.</p>
+<p>People do not decide whether to use AI on their own. They watch what colleagues do, what managers reward, who gets blamed when something fails, and whether the tool saves time in real work. They compare the effort of learning it now with a benefit that may or may not arrive later. They also wonder what AI says about the skills they spent years building.</p>
+<p>These choices depend on what other people do. That is exactly what game theory studies.</p>
+<p>No one needs equations to use the idea. The point is simple: people respond to the rules around them. If a company rewards the old way of working, makes approved AI tools hard to use, and treats questions as resistance, another training session will not help. Change those conditions and trying AI starts to make sense.</p>
+<p style="font-size: small; color: #6b7280; margin-top: 0.5em;">By Rodrigo A. Diaz Leven — <a href="https://www.linkedin.com/in/rodrigoleven/">LinkedIn</a> · <a href="https://github.com/bruj0">GitHub</a> · <a href="https://resume.bruj0.net/bruj0/rodrigo-leven">Resume</a></p>
+
+<p><img alt="Why AI adoption stalls: your team may be right to wait" class="essay-cover" src="linkedin-image-1791020152758.png" /></p>
+<h2 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#the-technology-is-only-part-of-the-change">The technology is only part of the change</a></li>
+<li><a href="#why-waiting-can-be-rational">Why waiting can be rational</a></li>
+<li><a href="#the-shared-benefit-problem">The shared-benefit problem</a></li>
+<li><a href="#when-speed-creates-costs-for-everyone-else">When speed creates costs for everyone else</a></li>
+<li><a href="#ai-adoption-can-threaten-professional-identity">AI adoption can threaten professional identity</a></li>
+<li><a href="#visible-enthusiasm-is-not-the-same-as-changed-behavior">Visible enthusiasm is not the same as changed behavior</a></li>
+<li><a href="#change-the-setup-not-just-the-training">Change the setup, not just the training</a></li>
+<li><a href="#1-make-progress-visible-without-turning-it-into-surveillance">1. Make progress visible without turning it into surveillance</a></li>
+<li><a href="#2-reward-useful-behavior-rather-than-ai-activity">2. Reward useful behavior rather than AI activity</a></li>
+<li><a href="#3-lower-the-cost-of-the-first-useful-experience">3. Lower the cost of the first useful experience</a></li>
+<li><a href="#4-give-existing-expertise-a-stronger-role">4. Give existing expertise a stronger role</a></li>
+<li><a href="#5-make-the-safe-path-the-easiest-path">5. Make the safe path the easiest path</a></li>
+<li><a href="#a-step-by-step-adoption-plan">A step-by-step adoption plan</a></li>
+<li><a href="#measure-whether-work-changed-not-whether-people-clicked">Measure whether work changed, not whether people clicked</a></li>
+<li><a href="#how-an-adoption-plan-can-go-wrong">How an adoption plan can go wrong</a></li>
+<li><a href="#what-leaders-should-do-differently">What leaders should do differently</a></li>
+<li><a href="#adoption-follows-the-game-people-are-actually-playing">Adoption follows the game people are actually playing</a></li>
+</ul>
+<h2 id="the-technology-is-only-part-of-the-change">The technology is only part of the change<a class="headerlink" href="#the-technology-is-only-part-of-the-change" title="Permanent link">&para;</a></h2>
+<p>Companies often treat AI adoption like any other software rollout. They choose a tool, give people access, publish a policy, and teach a few prompting tips. Those steps matter, but they do not mean that daily work will change.</p>
+<p>Using AI often means changing routines that already work. It can affect how people research, write, design, review, decide, and communicate. It can also change which skills receive praise and which work gets noticed.</p>
+<p>This creates several questions for each person:</p>
+<ul>
+<li>Will the tool improve my work enough to justify the learning cost?</li>
+<li>Will I be blamed if it makes a mistake?</li>
+<li>Will I receive credit for using it well, or only pressure to produce more?</li>
+<li>Are my colleagues changing too, or will I do the extra work alone?</li>
+<li>Does management truly value the new behavior?</li>
+<li>Will this make my expertise more valuable or less valuable?</li>
+</ul>
+<p>A training session can explain a feature. It cannot answer these questions by itself.</p>
+<p>Leaders often assume that people resist because they lack skill or have the wrong attitude. Sometimes that is true. But waiting may also be the safer choice. An employee who gets no credit for careful AI use but may be blamed for an AI mistake has a reason to wait. A manager judged only on this quarter's output has a reason to push for speed instead of learning. A busy team has a reason to return to familiar methods after the workshop.</p>
+<p>So there are two jobs: provide a useful tool and make it sensible for people to use it well.</p>
+<p><strong>In short: AI changes work, rewards, risk, and professional identity. A tool and a training session cover only part of the job.</strong></p>
+<h2 id="why-waiting-can-be-rational">Why waiting can be rational<a class="headerlink" href="#why-waiting-can-be-rational" title="Permanent link">&para;</a></h2>
+<p>One of the simplest ideas in game theory is the <strong>coordination game</strong>. People do better when they make matching choices, but they hesitate because they do not know what everyone else will do.</p>
+<p>Imagine two departments considering the same AI-assisted workflow. It becomes more useful when both take part. They can share instructions, reuse what works, and follow the same process. If only one department changes, it does most of the learning while the other carries on as before.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Department B adopts</strong></th>
+<th><strong>Department B waits</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Department A adopts</strong></td>
+<td>Both gain from shared practices and reusable knowledge</td>
+<td>A pays most of the transition cost alone</td>
+</tr>
+<tr>
+<td><strong>Department A waits</strong></td>
+<td>B pays most of the transition cost alone</td>
+<td>Neither gains, but neither accepts immediate disruption</td>
+</tr>
+</tbody>
+</table>
+<p>Both departments may want the better result. Still, waiting feels safer when neither trusts the other to follow through.</p>
+<p>The classic version of this problem is called the <strong>Stag Hunt</strong>. Two hunters can cooperate to catch a stag, which gives both a large reward, or each can hunt a hare alone for a smaller but safer reward. Hunting the stag is better if both cooperate. Hunting the hare is safer if cooperation is uncertain.</p>
+<p>At work, the “hare” is the current process. It may be slower, but people know how it works. The “stag” is the new process. It pays off when enough people use compatible tools, share what they learn, and build on each other's work.</p>
+<p>A public announcement is not enough. People look for signs that the company means what it says:</p>
+<ul>
+<li>Are managers using the new process in planning and review?</li>
+<li>Are teams given time to learn?</li>
+<li>Are successful practices shared and maintained?</li>
+<li>Do promotion and recognition reflect the new expectations?</li>
+<li>Does the approved tool work well enough for daily use?</li>
+</ul>
+<p>When those signs are missing, “wait and see” is not stubbornness. It is a reasonable way to avoid risk.</p>
+<p><strong>In short: People are more willing to change when they can see colleagues and leaders changing too. Show that the company will follow through.</strong></p>
+<h2 id="the-shared-benefit-problem">The shared-benefit problem<a class="headerlink" href="#the-shared-benefit-problem" title="Permanent link">&para;</a></h2>
+<p>Some of the best results of AI adoption are things everyone can use: examples, templates, instructions, tested workflows, reusable prompts, checks, and lessons from failed attempts.</p>
+<p>Economists call this kind of thing a <strong>public good</strong>. One person does most of the work, but many people benefit.</p>
+<p>Suppose someone spends several hours turning a useful AI workflow into a guide for the whole team. They get some value from it, but most of the benefit goes to other people. If the company rewards only immediate personal output, keeping a rough private version may be the smarter career move.</p>
+<p>This creates the <strong>free-rider problem</strong>. Everyone wants useful shared resources. Each person would prefer that someone else spend the time to create and maintain them.</p>
+<p>The problem appears in many forms:</p>
+<table>
+<thead>
+<tr>
+<th>Shared contribution</th>
+<th>Personal cost</th>
+<th>Shared benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Documenting a reliable workflow</td>
+<td>Time away from immediate delivery</td>
+<td>Others avoid repeated discovery work</td>
+</tr>
+<tr>
+<td>Reviewing an AI-generated template</td>
+<td>Careful testing and correction</td>
+<td>Many users receive a safer starting point</td>
+</tr>
+<tr>
+<td>Reporting a failed experiment</td>
+<td>Possible embarrassment</td>
+<td>Others avoid repeating the mistake</td>
+</tr>
+<tr>
+<td>Building a set of test cases</td>
+<td>Upfront research and maintenance</td>
+<td>The company can compare tools and changes</td>
+</tr>
+<tr>
+<td>Coaching colleagues</td>
+<td>Time and attention</td>
+<td>More people become capable and independent</td>
+</tr>
+</tbody>
+</table>
+<p>Telling people to “collaborate more” does not fix this. The company has to value work that helps other people do their jobs.</p>
+<p>This does not need a points system. Credit can show up in planning, performance reviews, staffing decisions, and public thanks. The important part is to treat team improvements as real work, not a favor done after the real work is finished.</p>
+<p>Reuse matters too. Using a tested resource can be better than making another one. If a company rewards creation but ignores reuse and maintenance, it may end up with a large catalog that nobody trusts.</p>
+<p><strong>In short: Shared AI resources will stay rare if one person does the work while everyone else gets the benefit. Give credit for creating, reusing, maintaining, and teaching.</strong></p>
+<h2 id="when-speed-creates-costs-for-everyone-else">When speed creates costs for everyone else<a class="headerlink" href="#when-speed-creates-costs-for-everyone-else" title="Permanent link">&para;</a></h2>
+<p>AI can reduce the time needed to produce text, analysis, software, designs, presentations, and decisions. That speed creates value when the result is useful and dependable. It creates risk when one person receives the benefit of speed while other people absorb the cost of errors.</p>
+<p>This looks like the <strong>Prisoner's Dilemma</strong>, another game-theory model. Each person can work carefully or take a shortcut. The shortcut saves time now. If everyone takes it, the whole company pays later.</p>
+<p>Consider a team using AI to prepare customer communications. One employee reviews sources, checks claims, and considers privacy. Another generates the message quickly and sends it after a brief scan. The second employee finishes first. If the message contains an error, however, customer support, legal staff, managers, and colleagues may carry the cost.</p>
+<p>The same thing can happen in hiring, finance, software, operations, research, and policy work. The person who skips the checks saves time. The company carries the risk.</p>
+<table>
+<thead>
+<tr>
+<th>Individual choice</th>
+<th>Immediate personal effect</th>
+<th>Possible shared effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verify claims and sensitive data</td>
+<td>More time before delivery</td>
+<td>Fewer errors and safer reuse</td>
+</tr>
+<tr>
+<td>Accept plausible output quickly</td>
+<td>Faster visible completion</td>
+<td>Hidden mistakes, rework, or loss of trust</td>
+</tr>
+<tr>
+<td>Record limits and uncertainty</td>
+<td>Less impressive presentation</td>
+<td>Better decisions and clearer accountability</td>
+</tr>
+<tr>
+<td>Present AI output as settled fact</td>
+<td>Stronger short-term appearance</td>
+<td>Poor decisions based on false confidence</td>
+</tr>
+</tbody>
+</table>
+<p>If leaders reward only volume and speed, they make shortcuts rational. A policy that says “use AI responsibly” cannot compete with a performance system that rewards the first answer and ignores later cleanup.</p>
+<p>The answer is not to bury every task in approvals. The checks should match the risk. A draft for an internal meeting needs less review than a credit decision, a legal notice, or a change to a live system.</p>
+<p>Speed should come with ownership. People remain responsible for the claims and decisions they accept, whether a person or a machine wrote the first draft.</p>
+<p><strong>In short: AI becomes risky when one person gets the speed and everyone else gets the mistakes. Reward checked results and good judgment, not output alone.</strong></p>
+<h2 id="ai-adoption-can-threaten-professional-identity">AI adoption can threaten professional identity<a class="headerlink" href="#ai-adoption-can-threaten-professional-identity" title="Permanent link">&para;</a></h2>
+<p>A new tool is never just a tool. People also wonder what it says about their value.</p>
+<p>A copywriter may hear that writing no longer matters. An analyst may hear that careful research has become a button. A senior engineer may hear that years of technical skill have lost their worth. A customer-service specialist may hear that experience and judgment are merely data to be automated.</p>
+<p>Leaders may not mean to send these messages. People can still hear them, especially when every announcement talks about replacing work, cutting staff, or doing more with fewer people.</p>
+<p>That fear changes the decision. Someone may see that AI helps with certain tasks and still avoid it because using it seems to lower their status. If a company praises AI mainly for replacing expert work, experts have a reason to defend the old process.</p>
+<p>A more honest message starts with the tool's limits. AI can suggest options, summarize material, find patterns, and write drafts. It still needs people to define the problem, judge the evidence, understand the context, spot harm, weigh trade-offs, and take responsibility.</p>
+<p>Existing expertise often becomes more important when output becomes cheap. A skilled professional can identify where a confident answer is wrong, which exception matters, and what the tool was never told. A novice may receive the same output without knowing where to question it.</p>
+<p>Companies should make this role clear. Experienced employees can set standards, create examples, test outputs, teach context, and decide where automation does not belong. This should be real work with real authority, not an honorary title.</p>
+<p>The message also has to match real decisions. People will not believe that judgment matters if promotions, staffing, and praise still focus only on quantity and speed. They will believe what leaders reward when a real trade-off appears.</p>
+<p><strong>In short: AI can feel like a threat to status, not just a new tool. Give experienced people real authority to guide, test, and improve how it is used.</strong></p>
+<h2 id="visible-enthusiasm-is-not-the-same-as-changed-behavior">Visible enthusiasm is not the same as changed behavior<a class="headerlink" href="#visible-enthusiasm-is-not-the-same-as-changed-behavior" title="Permanent link">&para;</a></h2>
+<p>A company can look busy with AI without changing how work gets done.</p>
+<p>People attend demos, join pilot groups, mention AI in plans, and repeat the latest company language. Usage numbers rise because employees open the tool. Yet important work continues as before, or people use AI only for small tasks that do not matter much.</p>
+<p>This is sometimes called <strong>adoption theater</strong>. It does not always mean that people are pretending. They may support the idea but lack time, confidence, access, or a clear use for it. They may also learn that showing enthusiasm is safer than changing how they work.</p>
+<p>Managers see participation but cannot tell whether work changed. Employees see announcements but cannot tell whether the company will keep supporting the effort.</p>
+<p>Tool usage alone cannot resolve the uncertainty. A login does not prove value. A high prompt count may show confusion rather than progress. A polished AI-generated document may hide weak understanding.</p>
+<p>Better evidence comes from normal work:</p>
+<ul>
+<li>Did a task become faster without increasing correction work?</li>
+<li>Did the quality of a decision improve?</li>
+<li>Did a reusable practice help another team?</li>
+<li>Did an employee identify a risk before it became a problem?</li>
+<li>Did the process reduce repeated work?</li>
+<li>Did people stop using the tool where it performed poorly?</li>
+</ul>
+<p>The last question matters. Good AI use includes knowing when not to use it. If people learn that a tool is unreliable for a task and choose another method, that shows judgment, not resistance.</p>
+<p><strong>In short: Attendance, logins, and prompt counts do not prove much. Look for better work and sound decisions about when AI helps and when it does not.</strong></p>
+<h2 id="change-the-setup-not-just-the-training">Change the setup, not just the training<a class="headerlink" href="#change-the-setup-not-just-the-training" title="Permanent link">&para;</a></h2>
+<p>Game theory also asks a practical question: how can we change the rules so that sensible personal choices lead to a good result for everyone?</p>
+<p>For AI adoption, that means changing the setup around the choice. Five changes matter most.</p>
+<h3 id="1-make-progress-visible-without-turning-it-into-surveillance">1. Make progress visible without turning it into surveillance<a class="headerlink" href="#1-make-progress-visible-without-turning-it-into-surveillance" title="Permanent link">&para;</a></h3>
+<p>People need proof that others are learning and that the company is serious. Share team examples, lessons, reused work, and measured improvements. Show how people use AI in real work, including where it failed.</p>
+<p>The point is to help people see what is happening, not to rank them. Individual leaderboards can reward shallow activity, punish people whose jobs offer fewer uses for AI, and encourage activity that looks good on a dashboard but helps no one.</p>
+<p>Useful examples include:</p>
+<ul>
+<li>Short demonstrations based on completed work.</li>
+<li>Case studies that include effort, limits, and corrections.</li>
+<li>A shared record of tested practices and known failure modes.</li>
+<li>Team-level progress against agreed outcomes.</li>
+<li>Open discussion of where the tool should not be used.</li>
+</ul>
+<p><strong>In short: Show useful examples and team learning. Do not turn adoption into an individual ranking system.</strong></p>
+<h3 id="2-reward-useful-behavior-rather-than-ai-activity">2. Reward useful behavior rather than AI activity<a class="headerlink" href="#2-reward-useful-behavior-rather-than-ai-activity" title="Permanent link">&para;</a></h3>
+<p>People learn a company's real rules from praise, promotions, staffing, and workload.</p>
+<p>If leaders say that careful AI use matters but still reward only volume, employees will optimize for volume. If mentoring and shared resources receive no credit, people will treat them as extra work. If an honest account of a failed experiment harms a career, future failures will become less visible.</p>
+<p>Work worth recognizing includes:</p>
+<ul>
+<li>Improving a result with appropriate AI assistance.</li>
+<li>Finding that an AI approach is unsafe or ineffective.</li>
+<li>Creating a tested resource that others reuse.</li>
+<li>Helping colleagues learn to do the work themselves.</li>
+<li>Reducing risk or repeated work.</li>
+<li>Explaining the limits of an AI-assisted decision.</li>
+</ul>
+<p>Do not make “uses AI” a performance category. Judge the work itself.</p>
+<p><strong>In short: People follow the rewards they can see. Reward useful results, learning, good judgment, and help given to the team, not AI use by itself.</strong></p>
+<h3 id="3-lower-the-cost-of-the-first-useful-experience">3. Lower the cost of the first useful experience<a class="headerlink" href="#3-lower-the-cost-of-the-first-useful-experience" title="Permanent link">&para;</a></h3>
+<p>Big change programs often ask people to do too much before they see any benefit. A small first step gives them an answer sooner.</p>
+<p>A simple path might look like this:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Action</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explore</td>
+<td>Use AI on a low-risk, familiar task</td>
+<td>Learn the basic interaction and limits</td>
+</tr>
+<tr>
+<td>Compare</td>
+<td>Complete a task with and without assistance</td>
+<td>See whether the tool actually helps</td>
+</tr>
+<tr>
+<td>Integrate</td>
+<td>Add AI to one repeatable part of a workflow</td>
+<td>Move from experiment to practice</td>
+</tr>
+<tr>
+<td>Share</td>
+<td>Record the method, evidence, and limitations</td>
+<td>Help others judge whether to reuse it</td>
+</tr>
+<tr>
+<td>Improve</td>
+<td>Maintain or revise the practice after use</td>
+<td>Prevent the shared resource from becoming stale</td>
+</tr>
+</tbody>
+</table>
+<p>Pairing can help. A colleague who has already done something similar can answer basic questions and stop a small setup problem from ruining the first attempt.</p>
+<p>The first use case should matter enough to demonstrate value but carry limited risk. Asking people to begin with their most sensitive or complex work makes adoption harder than necessary.</p>
+<p><strong>In short: Start with a small, useful, low-risk task. Let one good result earn the next step.</strong></p>
+<h3 id="4-give-existing-expertise-a-stronger-role">4. Give existing expertise a stronger role<a class="headerlink" href="#4-give-existing-expertise-a-stronger-role" title="Permanent link">&para;</a></h3>
+<p>Experienced employees can help design and look after AI-assisted work. They know the exceptions, history, customer needs, legal limits, and day-to-day realities that a general AI model does not.</p>
+<p>Invite them to:</p>
+<ul>
+<li>Define what good output looks like.</li>
+<li>Build and review realistic test cases.</li>
+<li>Identify high-risk uses and forbidden shortcuts.</li>
+<li>Teach the context behind successful practices.</li>
+<li>Review failures and update guidance.</li>
+<li>Decide where human judgment must remain central.</li>
+</ul>
+<p>This also makes the tools more useful. AI works better when people close to the job provide the right background, test the results, and set clear limits.</p>
+<p>Participation must be real. Asking experts to approve a finished plan after key decisions have already been made does not protect their role or improve the result.</p>
+<p><strong>In short: Let the people who know the work shape how AI is used. Their knowledge is part of the solution, not a barrier.</strong></p>
+<h3 id="5-make-the-safe-path-the-easiest-path">5. Make the safe path the easiest path<a class="headerlink" href="#5-make-the-safe-path-the-easiest-path" title="Permanent link">&para;</a></h3>
+<p>Employees will avoid an approved system if it is slower, less capable, or harder to access than the alternatives. They may return to old methods or use unapproved tools quietly.</p>
+<p>This is not just a policy problem. It means the company has made the wrong option easier.</p>
+<p>The approved path should provide:</p>
+<ul>
+<li>Simple access and clear boundaries.</li>
+<li>Tools that fit existing work.</li>
+<li>Approved ways to handle sensitive information.</li>
+<li>Fast feedback when a use case is blocked.</li>
+<li>Reusable examples for common tasks.</li>
+<li>Controls proportional to risk.</li>
+<li>A clear route for reporting errors without punishment.</li>
+</ul>
+<p>Put the important rules into the workflow where possible. People should not have to study a long policy every time they do a routine task.</p>
+<p>No approved tool will be best at everything. The goal is not to remove every check. It is to remove pointless delays while keeping the checks that matter.</p>
+<p><strong>In short: If the unofficial option is much easier, people will use it. Make the approved workflow safe, useful, and quick enough for daily work.</strong></p>
+<h2 id="a-step-by-step-adoption-plan">A step-by-step adoption plan<a class="headerlink" href="#a-step-by-step-adoption-plan" title="Permanent link">&para;</a></h2>
+<p>Companies often choose between one big launch and a collection of small experiments. A step-by-step plan works better. It lets people learn what works before the company ties adoption to important decisions.</p>
+<h3 id="phase-1-understand-the-starting-point">Phase 1: Understand the starting point<a class="headerlink" href="#phase-1-understand-the-starting-point" title="Permanent link">&para;</a></h3>
+<p>Begin with work, not tool counts.</p>
+<ul>
+<li>Identify tasks where employees already use AI, including unofficial use.</li>
+<li>Ask where people see value, risk, confusion, and wasted effort.</li>
+<li>Record current time, quality, and rework for a few candidate workflows.</li>
+<li>Identify groups with different needs and levels of confidence.</li>
+<li>Clarify which uses are prohibited or require special review.</li>
+</ul>
+<p>An anonymous survey or feedback channel can help. People may not admit unofficial use or career concerns in a public workshop.</p>
+<h3 id="phase-2-prove-value-in-narrow-cases">Phase 2: Prove value in narrow cases<a class="headerlink" href="#phase-2-prove-value-in-narrow-cases" title="Permanent link">&para;</a></h3>
+<p>Choose a few low-risk tasks with clear results. Compare AI-assisted work with the current method. Record setup time, corrections, quality, and what employees thought of the process.</p>
+<p>Use volunteers, but do not rely only on enthusiasts. A tool that works only for people who enjoy experimenting may not support broad adoption.</p>
+<h3 id="phase-3-build-skills-the-team-can-share">Phase 3: Build skills the team can share<a class="headerlink" href="#phase-3-build-skills-the-team-can-share" title="Permanent link">&para;</a></h3>
+<p>Turn successful experiments into maintained practices. Train through real examples. Pair people during their first use. Give experts time to review guidance and test cases.</p>
+<p>At this stage, the company should remove practices that did not work. A small trusted collection is better than a large pile of untested prompts and templates.</p>
+<h3 id="phase-4-update-management-practices">Phase 4: Update management practices<a class="headerlink" href="#phase-4-update-management-practices" title="Permanent link">&para;</a></h3>
+<p>Update expectations, review processes, planning, and recognition. Managers need guidance on how to discuss AI-assisted work without rewarding raw usage or punishing honest limits.</p>
+<p>This is where leaders prove whether the change is real. If the official expectations change but deadlines, staffing, and performance reviews do not, employees will follow the old rules.</p>
+<h3 id="phase-5-see-whether-it-lasts">Phase 5: See whether it lasts<a class="headerlink" href="#phase-5-see-whether-it-lasts" title="Permanent link">&para;</a></h3>
+<p>Reduce special support gradually and observe what happens. Do teams keep using and improving the practices? Do new employees learn them through normal work? Do shared resources stay current? Do people still report failures?</p>
+<p>A practice that disappears as soon as the pilot ends was not fully adopted.</p>
+<p><strong>In short: First understand the work, then test a few uses, share what works, update management practices, and see whether the change lasts. Do not add serious consequences before the company has tested its own plan.</strong></p>
+<h2 id="measure-whether-work-changed-not-whether-people-clicked">Measure whether work changed, not whether people clicked<a class="headerlink" href="#measure-whether-work-changed-not-whether-people-clicked" title="Permanent link">&para;</a></h2>
+<p>Companies need to know whether AI is helping. Trouble starts when an easy-to-count number becomes the goal.</p>
+<p>Use several kinds of evidence instead of relying on one number.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Possible evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Did the work improve?</td>
+<td>Time to complete, error rate, customer outcome, decision quality, or reduced rework</td>
+</tr>
+<tr>
+<td>Did people adopt the workflow?</td>
+<td>Use within relevant tasks, not logins or total prompts</td>
+</tr>
+<tr>
+<td>Is the result dependable?</td>
+<td>Verification results, corrections, incidents, and review findings</td>
+</tr>
+<tr>
+<td>Are people sharing what works?</td>
+<td>Reuse of tested practices, successful onboarding, and less repeated research</td>
+</tr>
+<tr>
+<td>Do employees trust the process?</td>
+<td>Surveys, interviews, reporting rates, and willingness to discuss failure</td>
+</tr>
+<tr>
+<td>Does the practice last?</td>
+<td>Continued use after special support ends and evidence that resources stay current</td>
+</tr>
+</tbody>
+</table>
+<p>No single measure answers all these questions.</p>
+<p>Prompt counts and active-user rates can help operate a service. They can reveal whether access works or whether usage suddenly drops. They should not become direct measures of employee contribution.</p>
+<p>Likewise, time saved should include correction and maintenance. A draft produced in five minutes but corrected for two hours did not save two hours simply because the first version appeared quickly.</p>
+<p>Stories matter too. A short account of how a team avoided a bad decision may tell you more than a dashboard. But one good story is not enough. Use stories and broader evidence together.</p>
+<p><strong>In short: Measure better results, quality, reuse, trust, and whether the change lasts. Use login and prompt counts to run the service, not to judge people.</strong></p>
+<h2 id="how-an-adoption-plan-can-go-wrong">How an adoption plan can go wrong<a class="headerlink" href="#how-an-adoption-plan-can-go-wrong" title="Permanent link">&para;</a></h2>
+<p>A well-meant adoption program can create harmful behavior if it rewards the wrong signals.</p>
+<h3 id="do-not-create-ai-quotas">Do not create AI quotas<a class="headerlink" href="#do-not-create-ai-quotas" title="Permanent link">&para;</a></h3>
+<p>Targets for prompts, automations, or AI-assisted tasks push people to use AI where it adds no value. Choosing not to use it must remain acceptable.</p>
+<h3 id="do-not-turn-transparency-into-surveillance">Do not turn transparency into surveillance<a class="headerlink" href="#do-not-turn-transparency-into-surveillance" title="Permanent link">&para;</a></h3>
+<p>People need to see what is working, but individual monitoring can damage trust and push AI use underground. Focus on team learning and results. Collect only data that has a clear purpose.</p>
+<h3 id="do-not-reward-quantity-of-shared-assets">Do not reward quantity of shared assets<a class="headerlink" href="#do-not-reward-quantity-of-shared-assets" title="Permanent link">&para;</a></h3>
+<p>A hundred untested templates are not more valuable than five reliable ones. Measure use, maintenance, and results rather than catalog size alone.</p>
+<h3 id="do-not-confuse-confidence-with-competence">Do not confuse confidence with competence<a class="headerlink" href="#do-not-confuse-confidence-with-competence" title="Permanent link">&para;</a></h3>
+<p>AI can produce polished language that makes weak reasoning look complete. Review evidence, assumptions, and consequences rather than presentation quality.</p>
+<h3 id="do-not-penalize-honest-failure">Do not penalize honest failure<a class="headerlink" href="#do-not-penalize-honest-failure" title="Permanent link">&para;</a></h3>
+<p>If every failed experiment hurts the person who reports it, the company will stop hearing bad news. Separate careful testing from careless work.</p>
+<h3 id="do-not-ignore-unequal-opportunity">Do not ignore unequal opportunity<a class="headerlink" href="#do-not-ignore-unequal-opportunity" title="Permanent link">&para;</a></h3>
+<p>Some roles offer many safe uses for AI. Others involve sensitive work, physical processes, or tasks where current tools add little value. Compare people within their context.</p>
+<h3 id="do-not-give-experts-extra-duties-without-giving-them-time">Do not give experts extra duties without giving them time<a class="headerlink" href="#do-not-give-experts-extra-duties-without-giving-them-time" title="Permanent link">&para;</a></h3>
+<p>Reviewing test cases, maintaining guidance, and coaching colleagues are real work. If companies add these duties without reducing other work, quality will drop.</p>
+<h3 id="do-not-use-adoption-as-a-substitute-for-strategy">Do not use adoption as a substitute for strategy<a class="headerlink" href="#do-not-use-adoption-as-a-substitute-for-strategy" title="Permanent link">&para;</a></h3>
+<p>AI cannot repair an unclear product, a broken process, poor data, or conflicting goals. Automating confusion can make it travel faster.</p>
+<p><strong>In short: Watch for quotas, surveillance, piles of low-quality templates, hidden failures, and unfair comparisons. Usage can go up while the company gets worse at the work.</strong></p>
+<h2 id="what-leaders-should-do-differently">What leaders should do differently<a class="headerlink" href="#what-leaders-should-do-differently" title="Permanent link">&para;</a></h2>
+<p>Leaders do not need to become game theorists. They do need to ask better questions.</p>
+<p>Instead of asking, “Why are people resisting?” ask:</p>
+<ul>
+<li>What does adoption cost them now?</li>
+<li>Which benefits remain uncertain?</li>
+<li>What risks do they carry personally?</li>
+<li>What do they observe managers rewarding?</li>
+<li>Which parts of their professional identity appear threatened?</li>
+<li>Is the approved path easier than the alternatives?</li>
+<li>Can they see convincing examples from peers?</li>
+</ul>
+<p>Instead of announcing that AI use is mandatory, define where it is useful, where it is optional, and where it is unsafe. Give teams room to test those boundaries and revise them as evidence changes.</p>
+<p>Do not assume early adopters represent everyone. Find out why they succeed. They may have more confidence, more suitable work, better access, or more patience for failed experiments. Wider use needs a setup that also works for people who do not enjoy testing new tools.</p>
+<p>Do not measure enthusiasm. Check whether work improved. Ask what became faster, safer, clearer, or more reliable. Ask what new risks appeared. Ask who learned useful skills and who was left behind.</p>
+<p>Most of all, back up promises with decisions. If leaders say careful judgment matters, reward it even when it slows delivery for a good reason. If they say failure is part of learning, protect people who report a well-run failed experiment. If they say expertise matters, give experts a real say in the new workflow.</p>
+<p><strong>In short: Hesitation tells leaders something about cost, risk, rewards, or trust. Fix those problems before demanding a different choice.</strong></p>
+<h2 id="adoption-follows-the-game-people-are-actually-playing">Adoption follows the game people are actually playing<a class="headerlink" href="#adoption-follows-the-game-people-are-actually-playing" title="Permanent link">&para;</a></h2>
+<p>AI adoption is often presented as a contest between people who embrace the future and people who resist it. That story is attractive because it is simple. It is also a poor guide for action.</p>
+<p>People respond to the rules around them. They wait when leaders may change direction again. They do less shared work when only personal output gets credit. They take shortcuts when speed gets rewarded and other people carry the risk. They defend old methods when AI seems to lower their status. They perform enthusiasm when leaders count attendance instead of better work.</p>
+<p>None of this means that every objection is correct or that change should stop until everyone feels comfortable. It means that leaders should distinguish a difficult transition from a badly designed one.</p>
+<p>A better plan does five things:</p>
+<ol>
+<li>It shows people that the change is real and useful.</li>
+<li>It makes the first useful step cheap and low-risk.</li>
+<li>It rewards results, learning, shared work, and good judgment.</li>
+<li>It gives existing expertise an active role in shaping the new work.</li>
+<li>It makes the approved workflow practical enough to use every day.</li>
+</ol>
+<p>When these conditions improve, leaders do not need to keep selling the idea. People can see how the new way helps their work, their colleagues, and their careers.</p>
+<p>The main question is not, “How do we make people use AI?”</p>
+<p>It is, “What game have we created around its use, and which choices does that game make rational?”</p>
+<p><strong>In short: AI use lasts when the sensible choice for each person is also good for the company. Change the game and people can make a different choice.</strong></p>
+<hr />
+<h2 id="about-the-author">About the author<a class="headerlink" href="#about-the-author" title="Permanent link">&para;</a></h2>
+<p><strong>Rodrigo A. Diaz Leven</strong> is a platform engineering lead who works on AI-assisted engineering, evaluation, developer tools, and practical ways to introduce AI at work.</p>
+<p>If this essay raised a question, disagreement, or example from your own company, he would like to hear it:</p>
+<ul>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/rodrigoleven/">https://www.linkedin.com/in/rodrigoleven/</a></li>
+<li>GitHub: <a href="https://github.com/bruj0">https://github.com/bruj0</a></li>
+<li>Resume: <a href="https://resume.bruj0.net/bruj0/rodrigo-leven">https://resume.bruj0.net/bruj0/rodrigo-leven</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="assets/javascripts/panzoom.min.js"></script>
+      
+        <script src="assets/javascripts/zoompan.js"></script>
+      
+    
+  </body>
+</html>
